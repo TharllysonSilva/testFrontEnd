@@ -13,6 +13,9 @@ const NavBar = () => {
                 <Link to={`/`}>Home</Link>
             </li>
             <li>
+                <Link to={`/`}>Users</Link>
+            </li>
+            <li>
                 <Link to={`/new`} className="new-btn">Novo Post</Link>
             </li>
         </ul>
