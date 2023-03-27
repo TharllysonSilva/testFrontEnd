@@ -1,0 +1,22 @@
+.users h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.users h2,
+.users p {
+    margin-bottom: 1rem;
+}
+
+.users h2::first-letter {
+    text-transform: uppercase;
+}
