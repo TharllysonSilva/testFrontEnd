@@ -1,5 +1,7 @@
 import blogFetch from "../axios/config";
 
+import { useState, useEffect } from "react";
+
 const Comments = () => {
     const [comments, setComments] = useState([]);
   
@@ -22,7 +24,7 @@ const Comments = () => {
     return (
       <div className="comments">
         <h1>Comments</h1>
-        {posts.length === 0 ? (
+        {comments.length === 0 ? (
           <p>Carregando...</p>
         ) : (
           comments.map((comments) => (

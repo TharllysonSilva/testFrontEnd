@@ -24,8 +24,8 @@ const router = createBrowserRouter([
       element: <NewPost/>,
     },
     {
-      path: "/post/:id/comments",
-      element: <Comments />,
+      path: "/posts/:id/comments",
+      element: <Comments/>,
     },
   ],
   },
