@@ -2,6 +2,8 @@ import blogFetch from "../axios/config";
 
 import { useState, useEffect } from "react";
 
+import './Comments.css';
+
 const Comments = () => {
     const [comments, setComments] = useState([]);
   
@@ -31,7 +33,8 @@ const Comments = () => {
             <div className="comments" key={comment.id}>
               <h2>{comment.name}</h2>
               <p>{comment.email}</p>
-              <p>{comment.body}</p>
+              <p>Comentario:</p>
+              <p1>{comment.body}</p1>
             </div>
           ))
         )}
