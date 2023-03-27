@@ -28,10 +28,10 @@ const Comments = () => {
           <p>Carregando...</p>
         ) : (
           comments.map((comment) => (
-            <div className="comments" key={comments.id}>
-              <h2>{comments.name}</h2>
-              <p>{comments.email}</p>
-              <p>{comments.body}</p>
+            <div className="comments" key={comment.id}>
+              <h2>{comment.name}</h2>
+              <p>{comment.email}</p>
+              <p>{comment.body}</p>
             </div>
           ))
         )}
