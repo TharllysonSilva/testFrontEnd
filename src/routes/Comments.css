@@ -1,0 +1,22 @@
+.comments h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.comments h2,
+.comments p {
+    margin-bottom: 1rem;
+}
+
+.comments h2::first-letter {
+    text-transform: uppercase;
+}
