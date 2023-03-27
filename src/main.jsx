@@ -9,7 +9,7 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import NewPost from "./routes/NewPost";
 import Comments from "./routes/Comments";
-import Users from "./routes/Users";
+
 
 import "./index.css";
 
@@ -25,10 +25,7 @@ const router = createBrowserRouter([
         path: "/new",
         element: <NewPost />,
       },
-      {
-        path: "/:id/users",
-        element: <Users />,
-      },
+    
       {
         path: "/posts/:id/comments",
         element: <Comments />,
