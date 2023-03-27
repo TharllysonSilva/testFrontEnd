@@ -16,7 +16,7 @@ const Home = () => {
       );
 
       const data = response.data;
-      console.log(data);
+      setPosts(data);
     } catch (error) {
       console.log(error);
     }
@@ -26,7 +26,12 @@ const Home = () => {
     getPost();
   }, []);
 
-  return <div>Home</div>;
+  return (
+    <div>
+      <h1>Posts</h1>
+      {posts.length === 0 ? <p>Carregando...</p> : <p>Carregou</p>}
+    </div>
+  );
 };
 
 export default Home;
