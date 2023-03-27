@@ -33,7 +33,6 @@ const Comments = () => {
             <div className="comments" key={comment.id}>
               <h2>{comment.name}</h2>
               <p>{comment.email}</p>
-              <p>Comentario:</p>
               <p1>{comment.body}</p1>
             </div>
           ))
