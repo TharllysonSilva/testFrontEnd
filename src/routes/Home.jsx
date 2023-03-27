@@ -29,10 +29,16 @@ const Home = () => {
   return (
     <div>
       <h1>Posts</h1>
-      {posts.length === 0 ? (<p>Carregando...</p> ): (
+      {posts.length === 0 ? (
+        <p>Carregando...</p>
+      ) : (
         posts.map((post) => (
           <div className="post" key={post.id}>
             <h2>{post.title}</h2>
+            <p>{post.body}</p>
+            <Link to={`/posts/${post.id}`} className="btn">
+              Ver comentários
+            </Link>
           </div>
         ))
       )}
