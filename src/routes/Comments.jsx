@@ -2,14 +2,16 @@ import blogFetch from "../axios/config";
 
 import { useState, useEffect } from "react";
 
+import {  useParams } from 'react-router-dom';
+
 import './Comments.css';
 
 const Comments = () => {
     const [comments, setComments] = useState([]);
-  
+    const { id } = useParams();
     const getComments = async () => {
       try {
-        const response = await blogFetch.get(`/posts/${id}/comments`);
+        const response = await blogFetch.get(`/post/${id}/comments`);
   
         const data = response.data;
         setComments(data);
