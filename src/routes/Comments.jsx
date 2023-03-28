@@ -9,7 +9,7 @@ const Comments = () => {
   
     const getComments = async () => {
       try {
-        const response = await blogFetch.get("/comments");
+        const response = await blogFetch.get(`/posts/${id}/comments`);
   
         const data = response.data;
         setComments(data);
@@ -33,7 +33,7 @@ const Comments = () => {
             <div className="comments" key={comment.id}>
               <h2>{comment.name}</h2>
               <p>{comment.email}</p>
-              <p1>{comment.body}</p1>
+              <p>{comment.body}</p>
             </div>
           ))
         )}
