@@ -21,3 +21,7 @@ necessidades. Os seguintes serviços estão disponíveis:
 <p>escolher react</p>
 <p>e logo depois JavaScript</p> 
 <p>npm run dev</p>
+
+<h1>Oque foi feito:</h1>
+<p>Consumindo as duas primeiras API</p>
+<p>Adicionei uma páginação de Novo Post</p>
