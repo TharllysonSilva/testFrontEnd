@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/posts/:id/comments",
         element: <Comments />,
-      },
+      } ,
     ],
   },
 ]);
