@@ -41,4 +41,4 @@ const Users = () => {
     );
   };
   
-  export default Comments;
+  export default Users;
